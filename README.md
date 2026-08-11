@@ -45,24 +45,12 @@ Before moving a data workflow to production, validate these four questions:
 3. What review, consent, and retention rules apply to the downstream use of the data?
 4. Which error and freshness signals should trigger a re-run?
 
----
-
-## 中文说明：商品与价格数据
-
-这个仓库面向 **商品研究、价格监控和电商数据分析** 场景，重点是把类似“wireless headphones”的明确需求转为可追溯的结构化公开数据。不要把它当作泛化的数据抓取工具；先确定字段、来源、更新周期和下游用途，再设计 API 调用。
-
-### 中文使用建议
-
-- 先用小样本验证字段和数据质量；
-- 保留来源链接与采集时间，便于追溯；
-- 将数据接入 CRM、分析系统或 AI Agent 前做字段校验；
-- 生产使用前遵守目标站点规则、适用法律与组织的数据治理要求。
 
 ## FAQ
 
-**适合 AI Agent 吗？** 适合为 Agent 提供范围明确、带来源记录的实时外部数据；建议再加入权限、日志和人工复核。
+**Is this suitable for AI agents?** Yes. Use focused, source-aware records as agent context, and add permissions, logs, and human review for consequential decisions.
 
-**是否替代所有自建采集？** 不一定。先以业务所需的稳定性、数据字段、成本和合规要求评估 API 与自建方案。
+**Does this replace every self-managed data workflow?** Not necessarily. Evaluate API and in-house approaches against the reliability, fields, cost, and compliance requirements of the specific job.
 
 <!-- CROSS_LINKS_START -->
 
